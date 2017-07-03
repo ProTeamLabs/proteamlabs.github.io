@@ -11,3 +11,26 @@
 .cambridge img {
     height: 40px;
 }
+
+.feature-sub {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/image-bg.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.formee {
+    display: inline-flex;
+}
+
+input.right.inputnew.email-form {
+    margin-top: 0!important;
+}
+
+.logo {
+    height: 20px;
+}
+
+.logo-bottom {
+    position: relative;
+    height: 20px;
+}
