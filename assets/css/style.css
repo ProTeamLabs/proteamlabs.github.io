@@ -1361,11 +1361,20 @@ padding: 290px 0 0px 0 !important;
 	background-size: cover;
 }
 
+.feature-sub.feature-sub3 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../images/brand_reps.JPG);
+	background-size: cover;
+}
+
 .sub-inner {
 	max-width: 500px;
 	float: left;
 }
 
+.sub-inner-right {
+	max-width: 500px;
+	float: right;
+}
 /* --------- App Features Sub ------- */
 
 
@@ -1378,7 +1387,7 @@ padding: 290px 0 0px 0 !important;
 	padding: 150px 0 150px 0;
 }
 
-.software .feature-sub .sub-inner h1 {
+.software .feature-sub .sub-inner .sub-inner-right h1 {
 	font-family: 'Kanit';
 	font-size: 34px;
 	font-weight: 300;
