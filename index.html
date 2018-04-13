@@ -1,112 +1,280 @@
-
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
-  <head>
-    <meta charset="utf-8">
-    <title>PROTEAM - University Sport</title>
-    <link rel="icon" href="assets/logos/favicon.png" type="image/png" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chat with your team. Get notified of where you are in the league. Create team sheets and much more...">
-    <meta name="keywords" content="Proteam, University Sport, Proteam app">
-    <meta property="og:title" content="ProTeam - University Sport">
-    <meta property="og:url" content="http://proteam.io">
-    <meta property="og:description" content="Chat with your team. Get notified of where you are in the league. Create team sheets and much more...">
-    <meta property="og:image" content="http://proteam.io/assets/images/facebook-img.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="704">
-    <meta property="og:image:height" content="390">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"-->
-<link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-        <div class="container">
-          <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-              <a class="navbar-brand page-scroll" href="#main"><img src="assets/logos/logo.png"  height="22" alt="Advent" /></a>
-              </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a class="page-scroll" href="#app-features">Features</a></li>
-                    <!-- <li><a class="page-scroll" href="#review-section">Reviews</a></li> -->
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
-                </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROTEAM TECHNOLOGIES</title>
+    <style>
+
+        body {
+            margin:0;
+            padding:0;
+            height:100%;
+            font-size:1.4rem;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+        }
+
+        .container_item {
+            margin: 0 auto 0;
+        }
+
+        .landing-page-container {
+            width: 100%;
+            min-height: 100%;
+            height: 100vh;
+            background-image: url('https://cdn.shutterstock.com/shutterstock/videos/18651743/thumb/1.jpg');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            display: table;
+            font-family: "Montserrat",sans-serif;
+            color: #09383E;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            height: 2rem;
+            padding: 3rem 0;
+            display: block;
+        }
+
+        .menu-icon {
+            width: 2.5rem;
+            height: 1.5rem;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .header__item {
+            display: inline-block;
+            float: left;
+        }
+
+        .menu-icon__line {
+            width: 1.5rem;
+            height: .2rem;
+            background: #0C383E;
+            display: block;
+        }
+
+        .menu-icon__line:before, .menu-icon__line:after {
+            content: '';
+            width: 1.5rem;
+            height: .2rem;
+            background: #0C383E;
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu-icon__line:before {
+            left: .5rem;
+            top: -0.6rem;
+        }
+
+        .menu-icon__line:after {
+            top: -1.8rem;
+        }
+
+        .heading {
+            width: 90%;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1.7rem;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .social-container {
+            width: 7.25rem;
+            list-style: none;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        .social-container .social__icon {
+            width: 1.5rem;
+            float: left;
+            cursor: pointer;
+        }
+
+        .social-container .social__icon.social__icon--dr{
+            margin-left: 1.25rem;
+        }
+
+        .social-container .social__icon.social__icon--in{
+            margin-left: 1.5rem;
+        }
+
+        .social-container .social__icon.social__icon--fb{
+            margin: 0 0.25rem;
+        }
+
+        .coorde {
+                     font-size: 1rem;
+                     display: inline-block;
+                     float: left;
+                     position: relative;
+                     top: 40%;
+                     letter-spacing: .2rem;
+                     left: -11.5rem;
+                     margin: 0;
+                     transform: rotate(-90deg) translateY(50%);
+                 }
+
+        .ellipse-container {
+            width: 60rem;
+            height: 50rem;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            top: 1.5rem;
+        }
+
+        .ellipse-container .greeting {
+            position: relative;
+            text-align: center;
+            width: 80rem;
+            top: 22rem;
+            right: 21rem;
+            margin: 0px;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            font-size:65%;
+            opacity: .5;
+        }
+
+
+        .ellipse {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            border-style: solid;
+        }
+
+        .ellipse__outer--thin {
+            width: 100%;
+            height: 100%;
+            border-width: 1px;
+            border-color: rgba(9,56,62,.1);
+            animation: ellipseOrbit 15s ease-in-out infinite;
+        }
+
+        .ellipse__outer--thin:after {
+            content: "";
+            background-image: url("https://i.stack.imgur.com/yYxAH.png");
+            background-size: 700px 700px;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            color: #000;
+            position: absolute;
+            opacity: .3;
+        }
+
+        .ellipse__outer--thick {
+            width: 99.5%;
+            height:99.5%;
+            border-color: #09383E transparent;
+            border-width: 2px;
+            transform: rotate(-45 deg);
+            animation: ellipseRotate 15s ease-in-out infinite;
+        }
+
+        .ellipse__orbit {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-width: 2px;
+            border-color: #09383E;
+            top: 5rem;
+            right: 6.75rem;
+        }
+
+        .ellipse__orbit:before {
+            content: '';
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #09383E;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        @keyframes ellipseRotate {
+            0% {
+                transform: rotate(-45deg);
+            }
+            100% {
+                transform: rotate(-405deg);
+            }
+        }
+
+        @keyframes ellipseOrbit {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(30deg);
+            }
+        }
+
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("mylist").style.display = 'black';
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="container__item landing-page-container">
+      <div class="content-wrapper">
+        <header class="header">
+            <div class="menu-icon header__item" id="demo" onclick="myFunction()">
+                <span class="menu-icon__line"></span>
             </div>
-          </div>
-        </nav><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-
-    <div class="main app form" id="main"><!-- Main Section-->
-      <div class="hero-section">
-        <div class="container nopadding">
-          <div class="col-md-5">
-            <img class="img-r esponsive wow fadeInUp">
-          </div>
-          <div class="col-md-7">
-            <div class="hero-content">
-              <h1 class="wow fadeInUp" data-wow-delay="0.1s"><span class="highlighth1">UNIVERSITY SPORT</span><br style="font-size:0px;"><span class="highlighth1">NOW ONLINE</span></h1>
-              <p class="wow fadeInUp highlight" data-wow-delay="0.2s">
-                Launching for the most competitive campus leagues at the UK's elite universities.
-              </p>
-              <a style="display: block; width: 180px; max-width: 100%; float: left;" href='https://play.google.com/store/apps/details?id=io.proteam.proteamAndroid&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="width: 100%;" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png'/></a>
-                <a style="display: block; max-width: 100%; float: left; width: 180px; " href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1206408514&mt=8'><img style="height: 45px; bottom: 0; margin-top: 12px; margin-left: 12px;" alt='Get it on Google Play' src='assets/images/app_store.png'/></a>
-
-              <!-- <div style="margin-top: 12px; height: 47px; line-height: 27px;" class="btn btn-action">iOS - coming soon</div> -->
+          <h1 class="heading header__item">PROTEAM</h1>
+          <!--<ul class="social-container.header__item" id="mylist">
+              <li class="social__icon.social__icon--dr">
+                <img src='http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19753.png' alt="dribble" height="30" width="30">
+              </li>
+              <li class="social__icon.social__icon--in">
+                <img src='http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19753.png' alt="instagram" height="30" width="30">
+              </li>
+            </ul>-->
+        </header>
+        <p class="coorde">N 51° 45' 7.2792" / W 1° 15' 27.6372"</p>
+        <div class="ellipse-container">
+            <h2 class="greeting">SEE TODAY. ANTICIPATE TOMORROW.</h2>
+            <div class="ellipse ellipse__outer--thin">
+                <div class="ellipse ellipse__orbit"></div>
             </div>
-          </div>
-
+            <div class="ellipse ellipse__outer--thick"></div>
         </div>
-      </div>
     </div>
-    <div class="footer">
-      <div class="container">
-        <div class="col-md-6">
-          <img class="logo-bottom logo" src="assets/logos/logo.png" alt="Image" />
-
-          <div class="footer-text">
-            <p>
-              Copyright © 2017 Proteam Technologies. All Rights Reserved.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div id="contact" class="contact text-center">
-            <i class="ion-ios-chatboxes-outline"></i>
-            <!-- <h1>Contact us</h1> --><br>
-            <a href="mailto:team@proteam.io">team@proteam.io</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-<!-- Jquery and Js Plugins -->
-  <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/plugins.js"></script>
-  <script type="text/javascript" src="assets/js/menu.js"></script>
-  <script type="text/javascript" src="assets/js/custom.js"></script>
-  </body>
+</div>
+</div>
+</body>
 </html>
